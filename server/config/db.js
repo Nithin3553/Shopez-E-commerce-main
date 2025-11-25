@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const connectDB = async () => {
 
     try {
-        await mongoose.connect(process.env.MONGOBD_URL)
+        await mongoose.connect("mongodb://localhost:27017/Ecommerce")
 
         console.log('MongoDB Connected successfully');
     } catch (err) {
